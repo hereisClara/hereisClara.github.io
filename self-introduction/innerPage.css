@@ -1,0 +1,550 @@
+@charset "utf-8";
+
+/* 動畫 */
+@keyframes button-click{
+    0%{
+        /* font-size: 100%; */
+    }
+    50%{
+        width: 20%;
+        color: white;
+    }
+    100%{
+        font-size: 110%;
+        letter-spacing: 2px;
+        background-color: rgba(185, 185, 245, 0.805);
+        color: white;
+        width: 20%;
+        }
+    }
+
+@keyframes inbutton-click{
+    0%{
+        
+    }
+
+    100%{
+        background-color: rgba(244, 202, 118, 0.805);
+        color: white;
+
+        }
+    }
+
+.btn-animation:hover{
+    animation-name: button-click;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.inbtn-animation:hover{
+    animation-name: inbutton-click;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+
+/* 按鈕 */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px white;
+    border-radius: 45px;
+    background-color: rgba(255, 255, 255, 0.654);
+    margin: 20px auto;
+    width: 80%;
+    height: 70px;
+    font-weight: 600;
+}
+
+.btn{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    width: 14%;
+    text-align: center;
+    margin: 12px;
+    padding: 7px;
+    background-color: rgba(239, 226, 226, 0.572);
+    
+}
+
+
+#btn0{
+    width: 7%;
+}
+
+
+
+body{
+    background-image: url('homePage/背景.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* 內容 */
+.content{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 80%;
+    height: 550px;
+    margin: 0px auto;
+    padding: 10px 35px;
+    border: 1px white;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.654);
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+.innerContainer{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end: 4;
+    border: 1px white;
+    border-radius: 50px;
+    margin: 15px;
+    margin-top: 70px;
+    padding-left: 3%;
+    position: fixed;
+}
+
+.innerBtn{
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 30px;
+    width: 50px;
+    height: auto;
+    margin: 4px auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(133, 175, 242, 0.437);
+    text-align: center;
+}
+
+
+#detail{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start:2;
+    grid-column-end: 8;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+
+
+.words{
+    padding: 4%;
+    font-size: 100%;
+    font-weight: 200;
+    line-height: 200%;
+    letter-spacing: 3px;   
+    color: rgb(60, 60, 60);
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 70%;
+    letter-spacing: 3px;
+
+}
+
+h2{
+    
+    font-size: 24px;
+    font-weight: 450;
+    line-height: 160%;
+    letter-spacing: 3px;
+
+}
+
+h3{
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 140%;
+    letter-spacing: 3px;
+    color: rgb(42, 42, 42);
+    margin-top: 50px;
+}
+
+#foreword{
+    padding-top: 0%;
+}
+
+a {
+    text-decoration: none; /* 刪除底線 */
+    color: inherit; /* 保持文字顏色與父元素一致 */
+}
+
+/* p{
+    margin-top: 10px;
+} */
+
+.acaPhoto{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    position: relative;
+}
+
+.acaph{
+    margin-right: 10px;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    width: 230px;
+    height: 320px;
+}
+
+#acaPhoto1{
+    background-image: url('homePage/aca/Snapseed.jpg');
+    background-size: cover;
+}
+
+#acaPhoto2{
+    background-image: url('homePage/aca/Snapseed\ 2.jpg');   
+    background-size: cover;
+}
+
+#acaPhoto3{
+    background-image: url('homePage/aca/現代阿卡貝拉大賽.jpg');
+    background-size: cover;
+}
+
+#acaPhoto1:hover::before{
+    content: '攝於台南市知事官邸';
+    position: relative;
+    width: 230px;
+    height: 320px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.605);
+    padding: 5px;
+}
+
+#acaPhoto1:hover{
+    color: white; 
+    font-size: 20px;
+    transition:0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+#acaPhoto2:hover::before{
+    content: '與錄音室合作';
+    position: relative;
+    width: 230px;
+    height: 320px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.605);
+    padding: 5px;
+    z-index: 1;
+}
+
+#acaPhoto2:hover{
+    color: white; 
+    font-size: 20px;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+#acaPhoto3:hover::before{
+    content: '樂團參賽得獎';
+    position: relative;
+    width: 230px;
+    height: 320px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.605);
+    z-index: 1;
+    padding: 5px;
+}
+
+#acaPhoto3:hover{
+    color: white; 
+    font-size: 20px;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.otherPhoto{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    position: relative;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.merit{
+    margin-right: 30px;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    width: 320px;
+    height: 240px;
+}
+
+#merit1{
+    background-image: url('homePage/書卷獎.jpg');
+    background-size: cover;
+}
+
+#merit1:hover::before{
+    content: '書卷獎';
+    font-weight: 300;
+    letter-spacing: 2px;
+    position: relative;
+    width: 320px;
+    height: 240px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.605);
+    padding: 5px;
+}
+
+#merit1:hover{
+    color: white; 
+    font-size: 20px;
+    transition:0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+#merit2{
+    background-image: url('homePage/南風文學獎.jpg');
+    background-size: cover;
+}
+
+#merit2:hover::before{
+    content: '文學獎';
+    font-weight: 300;
+    letter-spacing: 2px;
+    position: relative;
+    width: 320px;
+    height: 240px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.605);
+    padding: 5px;
+}
+
+#merit2:hover{
+    color: white; 
+    font-size: 20px;
+    transition:0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.homeTphoto{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    position: relative;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.homeTph{
+    margin-right: 30px;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    width: 320px;
+    height: 240px;
+}
+
+#homeTph1{
+    background-image: url('homePage/家教板書.jpg');
+    background-size: cover;
+}
+
+#homeTph2{
+    background-image: url('homePage/家教課.jpg');
+    background-size: cover;
+}
+
+#homeTph1:hover::before{
+    content: '家教板書';
+    font-weight: 300;
+    letter-spacing: 2px;
+    position: relative;
+    width: 320px;
+    height: 240px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.605);
+    padding: 5px;
+}
+
+#homeTph1:hover{
+    color: white; 
+    font-size: 20px;
+    transition:0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+#homeTph2:hover::before{
+    content: '家教課中';
+    font-weight: 300;
+    letter-spacing: 2px;
+    position: relative;
+    width: 320px;
+    height: 240px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.605);
+    padding: 5px;
+}
+
+#homeTph2:hover{
+    color: white; 
+    font-size: 20px;
+    transition:0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.schoolTphoto{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    position: relative;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.schoolTph{
+    margin-right: 30px;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    width: 320px;
+    height: 240px;
+}
+
+#schoolTph1{
+    background-image: url('homePage/我與海報.jpg');
+    background-size: cover;
+}
+
+#schoolTph2{
+    background-image: url('homePage/教學照片.jpg');
+    background-size: cover;
+}
+
+#schoolTph1:hover::before{
+    content: '教學演示當天與海報合照';
+    font-weight: 300;
+    letter-spacing: 2px;
+    position: relative;
+    width: 320px;
+    height: 240px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.605);
+    padding: 5px;
+}
+
+#schoolTph1:hover{
+    color: white; 
+    font-size: 20px;
+    transition:0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+#schoolTph2:hover::before{
+    content: '教學照片';
+    font-weight: 300;
+    letter-spacing: 2px;
+    position: relative;
+    width: 320px;
+    height: 240px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.605);
+    padding: 5px;
+}
+
+#schoolTph2:hover{
+    color: white; 
+    font-size: 20px;
+    transition:0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+/* #process{
+    margin-left: 30px;
+} */
+
+/* #detailprocess{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px;
+    overflow-y: scroll;
+} */
+/* 
+#process{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 20px;
+}
+
+.processPic{
+    width: 100%;
+    height: auto;
+    border: 0px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#processWr{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2; 
+    grid-column-end: 4;
+}
+
+#backscene{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#aboutbackscene{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 25px;
+}
+
+#sitePic{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#aboutsite{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-top: 120px;
+    margin-left: 25px;
+}
+
+#tough{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+} */
