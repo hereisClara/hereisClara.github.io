@@ -92,7 +92,7 @@ body{
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 80%;
-    height: 550px;
+    height: 495px;
     margin: 0px auto;
     padding: 10px 35px;
     border: 1px white;
@@ -100,6 +100,7 @@ body{
     background-color: rgba(255, 255, 255, 0.654);
     padding: 5px;
     overflow-y: scroll;
+    position: relative;
 }
 
 .innerContainer{
@@ -112,7 +113,7 @@ body{
     margin: 15px;
     margin-top: 70px;
     padding-left: 3%;
-    position: fixed;
+    position: absolute;
 }
 
 .innerBtn{
