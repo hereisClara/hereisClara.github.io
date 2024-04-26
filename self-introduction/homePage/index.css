@@ -94,6 +94,7 @@ body{
     border: 1px white;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.654);
+    position: relative;
 }
 
 .innerContainer{
@@ -101,7 +102,7 @@ body{
     border: 1px white;
     border-radius: 50px;
     margin: 15px;
-    position: fixed;
+    position: absolute;
 }
 
 .innerBtn{
