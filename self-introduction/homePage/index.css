@@ -88,7 +88,7 @@ body{
     grid-template-columns: repeat(7, 1fr); /* 7 列，每列寬度相等 */
     grid-template-rows: repeat(5, 1fr); /* 3 行，每行高度相等 */
     width: 75%;
-    height: 300px;
+    height: 500px;
     margin: 0px auto;
     padding: 10px 35px;
     border: 1px white;
